@@ -4,10 +4,10 @@ Project, site about chess.
 ♔
 
 Using:
-- python;
-- django framework;
-- shtml; 
-- css;
+- ***python;(bold italic)***
+- ***django framework;(bold italic)***
+- ***html;(bold italic)***
+- ***css;(bold italic)***
 - ***OOP;(bold italic)***
 
 ♕
