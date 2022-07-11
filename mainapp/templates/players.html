@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row" style="width: 1900px; margin-bottom: 30px">
+  {% for player in players %}
+  <div class="col-lg-3" style="margin-top:40px; margin-left: 110px; margin-right: 20px; border: 0px;">
+    <img src="{{player.image.url}}" class="card-img-top" alt="..." style="width: 460px; height: 310px">
+    <div class="card-body">
+      <h4 class="card-title">{{player.name}}</h4>
+      <p class="card-text">{{player.about}}</p>
+      <hr>
+      <a id="link-debuts" style="" href="{% url 'debuts_page' %}" class="link-dark" > <h4>Debuts</h4></a>
+      <p class="card-text">{{player.debuts}}</p>
+    </div>
+
+  </div>
+{% endfor %}
+</div>
+
+
+{% endblock content %}

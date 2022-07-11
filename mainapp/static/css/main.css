@@ -1,0 +1,62 @@
+
+
+#debuts {
+    width: 50rem;
+    margin-left: 20px;
+    padding-top: 60px;
+    border: 0px
+
+}
+
+#def_name {
+    margin-left: 300px;
+    padding-top: -15px
+}
+
+#img_debut{
+    width: 23rem;
+    padding-top: 20px;
+}
+
+.card-img-top {
+    transition: 1s;
+   }
+.card-img-top:hover {
+    transform: scale(1.1);
+   }
+
+#debut_about{
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+#openings{
+    width: 55rem;
+    margin-left:1000px;
+    margin-top: -2887px
+
+}
+
+#op_name {
+    margin-left: 300px;
+    padding-top: -15px
+}
+
+#img_op{
+    width: 23rem;
+    padding-top: 20px;
+    margin-left: 3px
+}
+
+#op_about{
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.style-1{font-size:4em;line-height:.7;position:relative; padding-top: 50px}
+.style-1:after{content:attr(data-content);position:absolute;left:0;right:0;top:0;bottom:0;-webkit-text-stroke:1px #fff}
+.style-1:before{content:attr(data-content);position:absolute;left:2px;right:0;top:0;bottom:0;-webkit-text-stroke:4px #463f60}
+
+.style-2{font-size:4em;line-height:.7;position:relative; padding-top: 50px}
+.style-2:after{content:attr(data-content);position:absolute;left:0;right:0;top:0;bottom:0;-webkit-text-stroke:1px #fff}
+.style-2:before{content:attr(data-content);position:absolute;left:2px;right:0;top:0;bottom:0;-webkit-text-stroke:4px #463f60}

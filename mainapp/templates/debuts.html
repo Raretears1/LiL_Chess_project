@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="row row-cols-1 row-cols-md-2 g-2" id="debuts" >
+
+  <h2 data-content="Defenses" class="style-1"></h2>
+  {% for debut in debuts %}
+
+    <h3 class="card-title" id="def_name"><span style="font-size: 25px">&#9823;</span> {{debut.name}} <span style="font-size: 25px">&#9823;</span></h3>
+  <img src="{{debut.image.url}}" id="img_debut" class="card-img-top" alt="...">
+  <div class="card-body">
+
+    <p class="card-text" id="debut_about">{{debut.about}}</p>
+
+  </div>
+  <hr style="width: 800px">
+  {% endfor %}
+
+    <nav aria-label="Page navigation example" style="width: 60rem">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled" style="padding-right: 1px; margin-left:-1px">
+            <h4></h4>
+    </li>
+    {% if debuts.has_previous %}
+
+<li class="page-item" style="padding-left: 30px">
+            <a type="button" href="?page=1"  class="btn btn-outline-success" style="margin-left:-19px; padding-top: -10px">&#10550; first</a>
+            <a type="button" class="btn btn-outline-warning" style="margin-left: 20px; margin-top: -1px" href="?page={{debuts.previous_page_number}}">&#8592; previous</a>
+        {% endif %}
+</li>
+
+    <li class="page-item" style="padding-left: 10px">
+       {% if debuts.has_next %}
+      <a type="button" class="btn btn-outline-success" style="margin-right:20px; " href="?page={{ debuts.next_page_number }}">&#8594; next</a>
+      <a type="button" class="btn btn-outline-warning" style="margin-left:0px" href="?page={{ debuts.paginator.num_pages }}">&#10551; last</a>
+        {% endif %}
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+
+<div class="row row-cols-1 row-cols-md-2 g-2" id="openings" >
+    <h2 data-content="Openings" class="style-2"></h2>
+  {% for op in openings %}
+
+  <h3 class="card-title" id="op_name"><span style="font-size: 30px">&#9817;</span> {{op.name}} <span style="font-size: 30px">&#9817;</span></h3>
+  <img src="{{op.image.url}}" id="img_op" class="card-img-top" alt="...">
+  <div class="card-body">
+
+    <p class="card-text" id="op_about">{{op.about}}</p>
+
+  </div>
+  <hr style="width: 800px">
+  {% endfor %}
+
+    <nav aria-label="Page navigation example" style="width: 60rem">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled" style="padding-right: 1px; margin-left:-1px">
+            <h4></h4>
+    </li>
+    {% if openings.has_previous %}
+
+<li class="page-item" style="padding-left: 30px">
+            <a type="button" href="?page=1"  class="btn btn-outline-success" style="margin-left:-19px; padding-top: -10px">&#10550; first</a>
+            <a type="button" class="btn btn-outline-warning" style="margin-left: 20px; margin-top: -1px" href="?page={{openings.previous_page_number1}}">&#8592; previous</a>
+        {% endif %}
+</li>
+
+    <li class="page-item" style="padding-left: 10px">
+       {% if openings.has_next %}
+      <a type="button" class="btn btn-outline-success" style="margin-right:20px; " href="?page={{ openings.next_page_number1 }}">&#8594; next</a>
+      <a type="button" class="btn btn-outline-warning" style="margin-left:0px" href="?page={{ openings.paginator.num_pages1 }}">&#10551; last</a>
+        {% endif %}
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+
+{% endblock content %}

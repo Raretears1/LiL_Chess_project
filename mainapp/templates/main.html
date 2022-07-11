@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin-left: 0px; margin-right: 0px; margin-top: 0px; margin-bottom: 50px">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/car1.jpg' %}" style="height: 700px; width: 2500px; margin-left: -260px">
+      <div class="carousel-caption d-none d-md-block">
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/car2.png' %}"  style="height: 700px; width: 2500px; margin-left: -260px">
+      <div class="carousel-caption d-none d-md-block">
+
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/car3.png' %}"  style="height: 700px; width: 2800px; margin-left: -400px">
+      <div class="carousel-caption d-none d-md-block">
+
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4" style="padding-left: -20px">
+
+        <h2 style="margin-left: 35px; margin-bottom: 27px">Robert Fisher</h2>
+        <img src="{% static 'images/boby.jpg' %}" class="img" alt="..." style="border-radius: 50%; width: 16rem; height: 250px; margin-bottom: 20px">
+
+        <p> "I like the moment I crush a man's ego. Chess demands total concentration."</p>
+        <p><a class="btn btn-secondary" href="{% url 'debuts_page' %}">More debuts &#9821;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4" style="margin-left: 50px">
+
+         <h2 style="margin-left: 5px; margin-bottom: 27px">Hikaru Nakamura</h2>
+        <img src="{% static 'images/hikaru1.png' %}" class="img" alt="..." style="border-radius: 50%; width: 16rem; height: 250px; margin-bottom: 20px">
+        <p>"I've had to grow up pretty fast, which is not a good thing."</p>
+        <p><a class="btn btn-secondary" href="{% url 'players_page' %}">More players &#9820;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-3" style="margin-left: 50px">
+
+        <h2 style="margin-left: 20 px; margin-bottom: 27px">Magnus Carlsen</h2>
+        <img src="{% static 'images/magnum.jpg' %}" class="img" alt="..." style="border-radius: 50%; width: 16rem; height: 250px; margin-bottom: 20px">
+        <p>"People ask what my goal is. I don't have a goal."</p>
+        <p><a class="btn btn-secondary" href="{% url 'book_page' %}">Books &#9822;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr  style="border: 2px solid black;">
+
+    <div class="row featurette" style="padding-top: 60px">
+      <div class="col-md-7">
+        <h2 class="featurette-heading" >Garry Potter. <span class="text-muted"> Сhess game of young wizards against the enchanted figures of Voldemort </span></h2>
+        <p class="lead" style="padding-top: 80px">Ron Weasley was strong at chess and took command, dividing the roles, namely Harry - the bishop,
+          Hermione - the queen, and he himself played the knight. They played for black and won in the end.</p>
+        <hr>
+        <p class="lead" style="padding-top: 10px">This is how, knowing the Scandinavian defense, you can protect your friends by playing chess.</p>
+         <hr>
+        <p class="lead" style="padding-top: 10px">hmm is there a spell to immediately checkmate?</p>
+
+      </div>
+      <div class="col-md-5">
+        <div class="text-center">
+   <img src="{% static 'images/garry.jpg' %}" class="rounded" alt="..." style="width: 35rem">
+    </div>
+      </div>
+    </div>
+
+    <hr  style="border: 2px solid black;">
+
+    <div class="row featurette" style="padding-top: 60px">
+      <div class="col-md-7 order-md-2" style="padding-left: 70px">
+        <h2 class="featurette-heading" >The Queen's Gambit. <span class="text-muted">Girls playing chess are wonderful.</span></h2>
+        <p class="lead" style="padding-top: 60px"> is a 2020 American coming-of-age period drama streaming television miniseries based on the 1983 novel of the same name by Walter Tevis.
+          The title refers to the "Queen's Gambit", a chess opening. The series was written and directed by Scott Frank, who created it with Allan Scott,
+          who owns the rights to the book. Beginning in the mid-1950s and proceeding into the 1960s, the story follows the life of Beth Harmon (Anya Taylor-Joy),
+          a fictional chess prodigy on her rise to the top of the chess world while struggling with drug and alcohol dependency.</p>
+      <hr>
+        <p class="lead" style="padding-top: 10px">Anger is a powerful spice, a pinch can wake you up, and a whole handful will dull all sensations.</p>
+
+      </div>
+
+      <div class="col-md-5 order-md-1">
+        <img src="{% static 'images/queen.jpg' %}" class="rounded" alt="..." style="width: 35rem">
+      </div>
+    </div>
+
+    <hr  style="border: 2px solid black;">
+
+    <div class="row featurette" style="padding-top: 60px; padding-bottom: 25px">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Anime Lupin. <span class="text-muted">Season 4, Episode 2</span></h2>
+        <p class="lead" style="padding-top: 60px">Of course, you can't see the top three pieces from here, which makes it hard to say exactly how well/badly they play.
+        Then Lupin makes a move with his queen g2c6. At that time, he did not voice the word "check", and therefore one could assume that he simply decided to give the queen to be eaten by a pawn.
+        But everything becomes clear when Lupin makes the next (after Jigen) move: Bishop f1a6. And on this announces checkmate.</p>
+        <hr>
+        <p class="lead" style="padding-top: 10px">Even in anime, you can find an interesting and complete game of chess.</p>
+      </div>
+      <div class="col-md-5">
+       <img src="{% static 'images/anime.jpg' %}" class="rounded" alt="..." style="width: 35rem">
+      </div>
+    </div>
+
+
+
+    <!-- /END THE FEATURETTES -->
+
+  </div>
+
+{% endblock content %}
